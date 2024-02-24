@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(255, 135, 135, 0.845), rgba(158, 241, 246, 0.995)), url('images/banner.png');
+            background-size: cover;
+            color: white;
+        }
+
+        nav {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 70px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2em;
+            padding: 0.5rem 1rem;
+        }
+
+        .menu a:nth-child(5) {
+            background-color: rgb(81, 86, 81);
+            border-radius: 8px;
+            margin: 0 1rem;
+        }
+
+        .menu i {
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+            cursor: pointer;
+        }
+
+        .menu a:hover {
+            background-color: rgb(255, 123, 123);
+            border-radius: 8px;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 70px;
+            color: rgb(73, 57, 57);
+        }
+
+        .left {
+            flex-basis: 60%;
+        }
+
+        .right {
+            flex-basis: 30%;
+        }
+
+        .left h2 {
+            font-family: 'Poppins', sans-serif;
+            color: rgb(73, 57, 57);
+            font-weight: 500;
+        }
+
+        .left h1 {
+            font-family: 'Kalam', cursive;
+            font-size: 5em;
+        }
+
+        #hire {
+            text-decoration: none;
+            background: rgb(79, 46, 46);
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+        }
+
+        #myp {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            border: 1px dashed white;
+            padding: 1rem 2rem;
+            margin: 0 1rem;
+        }
+
+
+        #bio {
+            cursor: pointer;
+            padding: 150px 70px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            font-family: 'Poppins', sans-serif;
+            background: rgba(0, 0, 0, 0.05);
+        }
+
+        .leftbio {
+            flex-basis: 40%;
+        }
+
+        .rightbio {
+            flex-basis: 60%;
+        }
+
+        .leftbio img {
+            width: 80%;
+            height: 700px;
+            border-radius: 10px;
+        }
+
+        .rightbio {
+            text-align: right;
+            height: 200px;
+            padding: 0 40px;
+        }
+
+        .rightbio p {
+            margin: 15px 0;
+            line-height: 2.5rem;
+        }
+
+        .rightbio h1 {
+            font-size: 3rem;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        #follow {
+            text-align: center;
+        }
+
+        #follow i {
+            color: rgb(0, 0, 0);
+            font-size: 1.5rem;
+            margin: 0 0.5rem;
+        }
+
+        .link-h {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        #cv {
+            text-decoration: none;
+            color: black;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1.5rem;
+            margin: 0 1rem;
+            border: 1px dashed;
+        }
+
+        #services {
+            padding: 50px 70px;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.05);
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+        }
+
+        .intro h1 {
+            font-size: 3rem;
+        }
+
+        .card {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+        }
+
+        .cardbody {
+            flex-basis: 30%;
+            background: rgb(203, 233, 227);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .cardbody h3 {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        .cardbody i {
+            font-size: 2.5rem;
+            color: rgb(0, 0, 0);
+        }
+
+        .cardimg img {
+            width: 100%;
+        }
+
+        footer {
+            background: rgb(157, 243, 206);
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+            padding: 0.5rem;
+            font-family: 'Kalam', cursive;
+            text-align: center;
+        }
+
+        .heading {
+            font-family: 'Kalam', cursive;
+            color: black;
+            font-size: 5em;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">PORTFOLIO</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+                <a href="#">Hire me</a>
+
+                <i class="fa fa-search"></i>
+                <i class="fa fa-moon-o"></i>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="left">
+                <h2>Hi, I'm JIMMY</h2>
+                <h1>Student</h1>
+                <p>
+                    My Passion WebDev, Android Developer, critical thinking and Management.
+                    I think New think is Better than old think!
+                </p>
+                <br><br>
+                <div>
+                    <a href="#" id="hire">Hire Me</a>
+                    <a href="#" id="myp">My Portfolio</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="IMG_20221213_131211.jpg" alt="" height="584px">
+            </div>
+        </div>
+    </header>
+    <section id="bio">
+        <div class="leftbio">
+            <img src="IMG_20221214_155503.jpg" alt="">
+        </div>
+        <div class="rightbio">
+            <div>
+                <p>
+                <h4>WHAT I'M </h4>
+                </p>
+                <h1>A student pursuing BTech in CSE branch</h1>
+                <p>My Passion WebDev,Android Developer,Critical & Creative thinking and Management.
+                    I think New think is Better than old think!</p>
+                <hr>
+            </div>
+            <div class="info">
+                <div>
+                    <p><b>Name:</b> Shiba Samantasinghar</p>
+                    <p><b>Email:</b> abc@gmail.com</p>
+                </div>
+                <div>
+                    <p><b>From:</b> KOLKATA(W.B), India</p>
+                    <p><b>Phone:</b> +91 2587419630</p>
+                </div>
+            </div>
+            <div id="follow">
+                <p><b>Follow me on:</b>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-whatsapp"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </p>
+            </div>
+            <div class="link-h">
+                <a href="#" id="hire">Hire me</a>
+                <a href="#" id="cv">Download CV</a>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="intro">
+            <h1 class="heading">Skills</h1>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-camera"></i>
+                    <h3>Photography</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardbody">
+                    <i class="fa fa-lock"></i>
+                    <h3>Global Trendes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-camera"></i>
+                    <h3>SEO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+                <div class="cardbody">
+                    <i class="fa fa-envelope"></i>
+                    <h3>Management</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, reprehenderit quia assumenda ex
+                        similique quas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        Created By : SHIBA SAMANTASINGHAR(JIMMY)
+    </footer>
+</body>
+
+</html>
