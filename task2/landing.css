@@ -1,0 +1,145 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "poppins", sans-serif;
+}
+
+section{
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: url("matthew-smith-Rfflri94rs8-unsplash.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+header{
+	position: relative;
+	top: 0;
+	width: 100%;
+	padding: 30px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .logo{
+	position: relative;
+	color: #000;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+header .nav a{
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 500;
+	letter-spacing: 1px;
+	padding: 2px 15px;
+	border-radius: 20px;
+	transition: 0.5s;
+	transition-property: 'background';
+}
+header .nav a:not(:last-child){
+	margin-right: 30px;
+}
+header .nav a:hover{
+	background: #0c8401;
+}
+.containt{
+	max-width: 500px;
+	margin: 60px 100px;
+}
+.containt .info h2{
+	color: #ffffff;
+	font-size: 55px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px ;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+.containt .info h2 span{
+	color: rgb(0, 255, 8);
+	font-size: 50px;
+	font-weight: 600;
+}
+.containt .info p{
+	color: white;
+	font-size: 20px;
+	font-weight: 50px;
+	margin-bottom: 40px;
+}
+.containt .info-btn{
+	color: #ffffff;
+	background: #0c8401;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+.media-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.media-icon a{
+	position: relative;
+	color: #111;
+	font-size: 25px;
+	transition: 0.3s;
+	transition-property: transform;
+}
+.media-icon a:not(:last-child){
+	margin-right: 60px;
+}
+.media-icon a:hover{
+	transform: scale(1.5);
+}
+.session{
+	color: #ffffff;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	background: url("geranimo-a2zdgkDzFo8-unsplash.jpg")no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.session.h3{
+	color: #22ff00;
+	font-size: px;
+	text-transform: uppercase;
+	font-weight: 800;
+	letter-spacing: 2px ;
+	line-height: 60px;
+	margin-bottom: 30px;
+}
+.session.p{
+	color: white;
+	font-size: 20px;
+	font-weight: 50px;
+	margin-bottom: 40px;
+}
+.container5{
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.container5 .p{
+	width: 40vw;
+}
+.container5 .img{
+	height: 450px;
+	width: 400px;
+	background: url('./matthew-smith-Rfflri94rs8-unsplash.jpg') center/cover ;
+	border: #ffffff 2px solid;
+}
